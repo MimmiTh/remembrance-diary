@@ -65,7 +65,7 @@
     }
 
     article span {
-        color: #2f2f2f;
+        color: #16cec0;
         /*        color: #16cec0;*/
         -webkit-transition: color 2s;
         /* Safari */
@@ -120,7 +120,16 @@
 
     @keyframes grow {
         from {
-            height: 5px;
+            height: 0px;
+        }
+        to {
+            height: 10px; 
+        }
+    }
+
+    @keyframes grow2 {
+        from {
+            height: 10px;
         }
         to {
             height: 25px;
