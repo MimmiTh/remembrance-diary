@@ -1,12 +1,12 @@
     @import url("normalize.css");
-    body {
-        /*	width: 375px;
-	height: 667px;*/
-        border: 1px solid black;
+    h1,
+    h3 {
+        font-family: 'Slabo 27px', serif;
+        letter-spacing: 0.1em;
     }
     
+      
     h1 {
-        font-family: 'Slabo 27px', serif;
         font-size: 1.3em;
         padding: 5px 0;
         border-bottom: 1px solid grey;
@@ -16,6 +16,12 @@
         color: light grey;
         font-style: italic;
         font-size: 0.7em;
+    }
+    
+    h3 em {
+        font-size: 0.8em;
+        color: #a5a5a5;
+        font-weight: 300;
     }
     
     .top img {
@@ -60,9 +66,11 @@
     }
     
     p span {
-        color: #16cec0;
-        animation-name: changecolor;
-        animation-duration: 4s;
+        color: #2f2f2f;
+        /*        color: #16cec0;*/
+        -webkit-transition: color 2s;
+        /* Safari */
+        transition: color 2s;
     }
     
     .related-content .posts {
