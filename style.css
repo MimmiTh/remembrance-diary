@@ -1,41 +1,36 @@
     @import url("normalize.css");
-    body {
-        /*	width: 375px;
-	height: 667px;*/
-        border: 1px solid black;
-    }
-    
+
     h1 {
         font-family: 'Slabo 27px', serif;
         font-size: 1.3em;
         padding: 5px 0;
         border-bottom: 1px solid grey;
     }
-    
+
     h2 {
         color: light grey;
         font-style: italic;
         font-size: 0.7em;
     }
-    
+
     .top img {
         padding: 10px;
         height: 15px;
         cursor: auto;
     }
-    
+
     h1 {
         font-family: 'Slabo 27px', serif;
         font-size: 1.3em;
         padding: 5px 0;
         border-bottom: 1px solid grey;
     }
-    
+
     .related-content {
         position: relative;
         width: 100%;
     }
-    
+
     main {
         width: 90%;
         margin: 0 auto;
@@ -45,11 +40,11 @@
         font-size: 0.9em;
         color: #2f2f2f;
     }
-    
+
     main label {
         margin: 3%;
     }
-    
+
     .flower {
         position: absolute;
         height: 25px;
@@ -58,25 +53,25 @@
         animation-name: grow;
         animation-duration: 6s;
     }
-    
+
     p span {
         color: #16cec0;
         animation-name: changecolor;
         animation-duration: 4s;
     }
-    
+
     .related-content .posts {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     article {
         border-top: 1px solid #e4e4e4;
         flex: 1;
         min-width: 300px;
     }
     /* The animation code */
-    
+
     @keyframes changecolor {
         from {
             color: #2f2f2f;
@@ -86,7 +81,7 @@
         }
     }
     /* The animation code */
-    
+
     @keyframes grow {
         from {
             height: 5px;
