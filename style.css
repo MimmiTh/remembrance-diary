@@ -10,7 +10,7 @@ h1{
 	font-family: 'Slabo 27px', serif;
 	font-size: 1.3em;
 	padding: 5px 0;
-	border-bottom:1px solid grey; 
+	border-bottom:1px solid grey;
 }
 
 h2{
@@ -36,4 +36,10 @@ p span {
 
 .related-content .posts {
   display: flex;
+  flex-wrap: wrap;
+}
+
+.related-content .posts article {
+  flex: 1;
+  min-width: 300px;
 }
