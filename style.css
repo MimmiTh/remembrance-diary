@@ -12,3 +12,7 @@ main label {
 p span {
   background: blue;
 }
+
+.related-content .posts {
+  display: flex;
+}
