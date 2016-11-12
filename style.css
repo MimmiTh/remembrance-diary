@@ -4,43 +4,43 @@
         font-family: 'Slabo 27px', serif;
         letter-spacing: 0.1em;
     }
-
+    
     h1 {
         font-size: 1.3em;
         padding: 5px 0;
         border-bottom: 1px solid grey;
     }
-
+    
     h2 {
         color: light grey;
         font-style: italic;
         font-size: 0.7em;
     }
-
+    
     h3 em {
         font-size: 0.8em;
         color: #a5a5a5;
         font-weight: 300;
     }
-
+    
     .top img {
         padding: 10px;
         height: 15px;
         cursor: auto;
     }
-
+    
     h1 {
         font-family: 'Slabo 27px', serif;
         font-size: 1.3em;
         padding: 5px 0;
         border-bottom: 1px solid grey;
     }
-
+    
     .related-content {
         position: relative;
         width: 100%;
     }
-
+    
     main {
         width: 90%;
         margin: 0 auto;
@@ -50,63 +50,71 @@
         font-size: 0.9em;
         color: #2f2f2f;
     }
-
+    
     main label {
         margin: 3%;
     }
-
+    
     .flower {
         position: absolute;
-        height: 25px;
+        height: 0;
         right: 5px;
         top: -5px;
-        animation-name: grow;
-        animation-duration: 6s;
+        animation: 12s growFlower;
+        animation-delay: 0.7s;
+        animation-fill-mode: forwards;
     }
-
+    
     article span {
         color: #16cec0;
-        /*        color: #16cec0;*/
         -webkit-transition: color 2s;
-        /* Safari */
         transition: color 2s;
     }
-
+    
     .related-content .posts {
         display: flex;
         flex-wrap: wrap;
     }
-
+    
     article {
         border-top: 1px solid #e4e4e4;
         flex: 1;
         min-width: 300px;
     }
-
+    
     article {
-      animation: 3s show;
-      opacity: 0;
-      -webkit-transition: opacity 1s linear;
-      transition: opacity 1s linear;
-      animation-fill-mode: forwards;
+        animation: 3s show;
+        opacity: 0;
+        -webkit-transition: opacity 1s linear;
+        transition: opacity 1s linear;
+        animation-fill-mode: forwards;
     }
+    
     #post-1 {
-      animation-delay: 0.7s;
+        animation-delay: 0.7s;
     }
-
+    
     #post-2 {
-      animation-delay: 9s;
+        animation-delay: 9s;
+    }
+    
+    #webspan {
+        color: #2f2f2f;
+        animation: 2s changecolor;
+        animation-delay: 9s;
+        animation-fill-mode: forwards;
     }
     /* The animation code */
+    
     @keyframes show {
-      from {
-        opacity: 0
-      }
-      to {
-        opacity: 1
-      }
+        from {
+            opacity: 0
+        }
+        to {
+            opacity: 1
+        }
     }
-
+    
     @keyframes changecolor {
         from {
             color: #2f2f2f;
@@ -116,16 +124,23 @@
         }
     }
     /* The animation code */
-
-    @keyframes grow {
-        from {
-            height: 0px;
+    
+    @keyframes growFlower {
+        0% {
+            height: 0;
         }
-        to {
-            height: 10px; 
+        20% {
+            height: 10px;
+        }
+        70% {
+            height: 10px;
+        }
+       
+        100% {
+            height: 20px;
         }
     }
-
+    
     @keyframes grow2 {
         from {
             height: 10px;
