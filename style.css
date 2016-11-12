@@ -1,8 +1,29 @@
 @import url("normalize.css");
 
+body{
+	width: 375px;
+	height: 667px;
+	border: 1px solid black;
+}
+
+h1{
+	font-family: 'Slabo 27px', serif;
+	font-size: 1.3em;
+	padding: 5px 0;
+	border-bottom:1px solid grey; 
+}
+
+h2{
+	color: light grey;
+	font-size: 0.7em;
+}
 main {
   width: 90%;
   margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  line-height: 1.3;
+  font-size: 0.9em;
 }
 
 main label {
@@ -10,5 +31,5 @@ main label {
 }
 
 p span {
-  background: blue;
+  color: #05C8FF;
 }
