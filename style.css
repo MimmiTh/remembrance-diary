@@ -4,43 +4,43 @@
         font-family: 'Slabo 27px', serif;
         letter-spacing: 0.1em;
     }
-    
+
     h1 {
         font-size: 1.3em;
         padding: 5px 0;
         border-bottom: 1px solid grey;
     }
-    
+
     h2 {
         color: light grey;
         font-style: italic;
         font-size: 0.7em;
     }
-    
+
     h3 em {
         font-size: 0.8em;
         color: #a5a5a5;
         font-weight: 300;
     }
-    
+
     .top img {
         padding: 10px;
         height: 15px;
         cursor: auto;
     }
-    
+
     h1 {
         font-family: 'Slabo 27px', serif;
         font-size: 1.3em;
         padding: 5px 0;
         border-bottom: 1px solid grey;
     }
-    
+
     .related-content {
         position: relative;
         width: 100%;
     }
-    
+
     main {
         width: 90%;
         margin: 0 auto;
@@ -50,11 +50,11 @@
         font-size: 0.9em;
         color: #2f2f2f;
     }
-    
+
     main label {
         margin: 3%;
     }
-    
+
     .flower {
         position: absolute;
         height: 25px;
@@ -63,27 +63,51 @@
         animation-name: grow;
         animation-duration: 6s;
     }
-    
-    p span {
+
+    article span {
         color: #2f2f2f;
         /*        color: #16cec0;*/
         -webkit-transition: color 2s;
         /* Safari */
         transition: color 2s;
     }
-    
+
     .related-content .posts {
         display: flex;
         flex-wrap: wrap;
     }
-    
+
     article {
         border-top: 1px solid #e4e4e4;
         flex: 1;
         min-width: 300px;
     }
+
+    #post-1 {
+      animation: 10s show;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      -webkit-transition: opacity 1s linear;
+      transition: opacity 1s linear;
+    }
+
+    #post-2 {
+      animation: 50s show;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      -webkit-transition: opacity 1s linear;
+      transition: opacity 1s linear;
+    }
     /* The animation code */
-    
+    @keyframes show {
+      from {
+        opacity: 0
+      }
+      to {
+        opacity: 1
+      }
+    }
+
     @keyframes changecolor {
         from {
             color: #2f2f2f;
@@ -93,7 +117,7 @@
         }
     }
     /* The animation code */
-    
+
     @keyframes grow {
         from {
             height: 5px;
