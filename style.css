@@ -33,3 +33,7 @@ main label {
 p span {
   color: #05C8FF;
 }
+
+.related-content .posts {
+  display: flex;
+}
