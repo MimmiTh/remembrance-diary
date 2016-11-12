@@ -83,20 +83,19 @@
         min-width: 300px;
     }
 
-    #post-1 {
-      animation: 10s show;
+    article {
+      animation: 3s show;
       opacity: 0;
-      animation-fill-mode: forwards;
       -webkit-transition: opacity 1s linear;
       transition: opacity 1s linear;
+      animation-fill-mode: forwards;
+    }
+    #post-1 {
+      animation-delay: 0.7s;
     }
 
     #post-2 {
-      animation: 50s show;
-      opacity: 0;
-      animation-fill-mode: forwards;
-      -webkit-transition: opacity 1s linear;
-      transition: opacity 1s linear;
+      animation-delay: 9s;
     }
     /* The animation code */
     @keyframes show {
