@@ -83,14 +83,14 @@
         min-width: 300px;
     }
 
-    article {
+    article, #related-heading {
       animation: 3s show;
       opacity: 0;
       -webkit-transition: opacity 1s linear;
       transition: opacity 1s linear;
       animation-fill-mode: forwards;
     }
-    #post-1 {
+    #post-1, #related-heading {
       animation-delay: 0.7s;
     }
 
